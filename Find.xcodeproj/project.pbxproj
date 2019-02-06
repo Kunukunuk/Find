@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D07EBC5220A8CBA006D2FA9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07EBC4220A8CBA006D2FA9 /* APIManager.swift */; };
+		0D07EBC7220A945F006D2FA9 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07EBC6220A945F006D2FA9 /* JobData.swift */; };
 		0D12130822054314001993FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D12130722054314001993FB /* AppDelegate.swift */; };
 		0D12130A22054314001993FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D12130922054314001993FB /* ViewController.swift */; };
 		0D12130D22054314001993FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D12130B22054314001993FB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0D07EBC4220A8CBA006D2FA9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0D07EBC6220A945F006D2FA9 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
 		0D12130422054314001993FB /* Find.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Find.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D12130722054314001993FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D12130922054314001993FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				0D12130722054314001993FB /* AppDelegate.swift */,
 				0D12130922054314001993FB /* ViewController.swift */,
 				0D07EBC4220A8CBA006D2FA9 /* APIManager.swift */,
+				0D07EBC6220A945F006D2FA9 /* JobData.swift */,
 				0D12130B22054314001993FB /* Main.storyboard */,
 				0D12130E22054317001993FB /* Assets.xcassets */,
 				0D12131022054317001993FB /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D07EBC5220A8CBA006D2FA9 /* APIManager.swift in Sources */,
+				0D07EBC7220A945F006D2FA9 /* JobData.swift in Sources */,
 				0D12130A22054314001993FB /* ViewController.swift in Sources */,
 				0D12130822054314001993FB /* AppDelegate.swift in Sources */,
 			);

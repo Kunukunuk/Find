@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchJobs(_ sender: UIButton) {
-        print("hello")
+        
+        APIManager().getGithubJobs()
     }
     
 }
