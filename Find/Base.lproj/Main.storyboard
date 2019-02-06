@@ -35,7 +35,8 @@
                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
-                                    <segue destination="b6p-xf-yqA" kind="show" id="ffO-EV-50d"/>
+                                    <action selector="searchJobs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwe-YD-IeE"/>
+                                    <segue destination="b6p-xf-yqA" kind="show" identifier="searchPressed" id="ffO-EV-50d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,6 +55,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="85h-Xa-GKO"/>
+                    <connections>
+                        <outlet property="jobTitleText" destination="Bkn-yR-ZIp" id="nmY-Pk-Cb2"/>
+                        <outlet property="locationText" destination="qrD-3v-Tje" id="Upb-89-OJV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
