@@ -8,14 +8,32 @@
 
 import UIKit
 
-class JobResultsViewController: UIViewController {
+class JobResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jobs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JobCell", for: indexPath) as! JobCell
+        
+        cell.job = jobs[indexPath.row]
+        
+        return cell
+    }
+    
 
     var searchedJob: String?
     var searchedLocation: String?
+    var jobs: [JobData] = []
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         searchedJob = searchedJob?.replacingOccurrences(of: " ", with: "+")
         searchedLocation = searchedLocation?.replacingOccurrences(of: " ", with: "+")
         
@@ -28,8 +46,9 @@ class JobResultsViewController: UIViewController {
         
         APIManager().getGithubJobs(with: searchedJob!, by: searchedLocation!) { (jobs, error) in
             if error == nil {
-                for eachJob in jobs! {
-                    
+                self.jobs = jobs!
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
                 }
                 
             } else {
