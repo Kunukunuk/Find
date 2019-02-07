@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func searchJobs(_ sender: UIButton) {
         
-        APIManager().getGithubJobs()
+
     }
     
 }

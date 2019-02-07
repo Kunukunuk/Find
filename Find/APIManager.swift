@@ -31,11 +31,11 @@ class APIManager {
             }
             
             let dataArray = try! JSONSerialization.jsonObject(with: dataJson, options: []) as! NSArray
-            print(dataArray)
             
             for eachJob in dataArray {
                 let eachJobDict = eachJob as! [String: Any]
                 let job = JobData(eachJob: eachJobDict)
+                print(job.jobTitle)
                 jobs.append(job)
             }
             

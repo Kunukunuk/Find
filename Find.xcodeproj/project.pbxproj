@@ -14,6 +14,7 @@
 		0D12130D22054314001993FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D12130B22054314001993FB /* Main.storyboard */; };
 		0D12130F22054317001993FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D12130E22054317001993FB /* Assets.xcassets */; };
 		0D12131222054317001993FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D12131022054317001993FB /* LaunchScreen.storyboard */; };
+		0DC0C6E1220BDED500F82DE3 /* JobResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0D12130E22054317001993FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D12131122054317001993FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D12131322054317001993FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				0D12130722054314001993FB /* AppDelegate.swift */,
 				0D12130922054314001993FB /* ViewController.swift */,
+				0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */,
 				0D07EBC4220A8CBA006D2FA9 /* APIManager.swift */,
 				0D07EBC6220A945F006D2FA9 /* JobData.swift */,
 				0D12130B22054314001993FB /* Main.storyboard */,
@@ -144,6 +147,7 @@
 				0D07EBC5220A8CBA006D2FA9 /* APIManager.swift in Sources */,
 				0D07EBC7220A945F006D2FA9 /* JobData.swift in Sources */,
 				0D12130A22054314001993FB /* ViewController.swift in Sources */,
+				0DC0C6E1220BDED500F82DE3 /* JobResultsViewController.swift in Sources */,
 				0D12130822054314001993FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

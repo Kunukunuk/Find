@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Job Results View Controller-->
         <scene sceneID="e6e-An-Hj1">
             <objects>
-                <viewController id="b6p-xf-yqA" sceneMemberID="viewController">
+                <viewController id="b6p-xf-yqA" customClass="JobResultsViewController" customModule="Find" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F6R-bz-3Vw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
