@@ -76,13 +76,61 @@
                                 <rect key="frame" x="5" y="69" width="365" height="593"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="UxU-J2-oWk">
-                                        <rect key="frame" x="0.0" y="28" width="365" height="111"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="147" id="UxU-J2-oWk" customClass="JobCell" customModule="Find" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="365" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UxU-J2-oWk" id="1jU-Gb-TLB">
-                                            <rect key="frame" x="0.0" y="0.0" width="365" height="110.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UxU-J2-oWk" id="1jU-Gb-TLB">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="146.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FR2-m9-UUA">
+                                                    <rect key="frame" x="10" y="5" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="cE3-W4-W49"/>
+                                                        <constraint firstAttribute="height" constant="128" id="cXs-nP-ivT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd7-Ie-EVw">
+                                                    <rect key="frame" x="148" y="16" width="192" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-6M-QzU">
+                                                    <rect key="frame" x="148" y="51" width="192" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9b-pz-EMs">
+                                                    <rect key="frame" x="148" y="80" width="192" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fd7-Ie-EVw" firstAttribute="leading" secondItem="FR2-m9-UUA" secondAttribute="trailing" constant="10" id="0hi-vd-wq4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="S9b-pz-EMs" secondAttribute="trailing" constant="10" id="3uO-va-A1K"/>
+                                                <constraint firstItem="S9b-pz-EMs" firstAttribute="top" secondItem="eg1-6M-QzU" secondAttribute="bottom" constant="5" id="7it-wB-Z5t"/>
+                                                <constraint firstItem="S9b-pz-EMs" firstAttribute="leading" secondItem="FR2-m9-UUA" secondAttribute="trailing" constant="10" id="GRk-k3-5ht"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="S9b-pz-EMs" secondAttribute="bottom" constant="5" id="Grz-US-hWb"/>
+                                                <constraint firstAttribute="bottom" secondItem="FR2-m9-UUA" secondAttribute="bottom" constant="5" id="IgN-dF-hqw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eg1-6M-QzU" secondAttribute="trailing" constant="10" id="K6A-OM-zQR"/>
+                                                <constraint firstItem="Fd7-Ie-EVw" firstAttribute="top" secondItem="1jU-Gb-TLB" secondAttribute="topMargin" constant="5" id="SiN-bf-g0w"/>
+                                                <constraint firstItem="FR2-m9-UUA" firstAttribute="top" secondItem="1jU-Gb-TLB" secondAttribute="top" constant="5" id="dbq-bC-py8"/>
+                                                <constraint firstItem="eg1-6M-QzU" firstAttribute="top" secondItem="Fd7-Ie-EVw" secondAttribute="bottom" constant="5" id="fXt-qi-QBn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fd7-Ie-EVw" secondAttribute="trailing" constant="10" id="hCr-R3-eC1"/>
+                                                <constraint firstItem="eg1-6M-QzU" firstAttribute="leading" secondItem="FR2-m9-UUA" secondAttribute="trailing" constant="10" id="mRl-Oz-xfb"/>
+                                                <constraint firstItem="FR2-m9-UUA" firstAttribute="leading" secondItem="1jU-Gb-TLB" secondAttribute="leading" constant="10" id="p9Z-oI-oTa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="companyNameLabel" destination="S9b-pz-EMs" id="pLO-e0-2R4"/>
+                                            <outlet property="jobCreationLabel" destination="eg1-6M-QzU" id="q8B-ho-zxN"/>
+                                            <outlet property="jobTitleLabel" destination="Fd7-Ie-EVw" id="s34-qQ-Hcb"/>
+                                            <outlet property="logoImageView" destination="FR2-m9-UUA" id="KCj-Sc-Gfk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

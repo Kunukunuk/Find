@@ -9,7 +9,12 @@
 import UIKit
 
 class JobCell: UITableViewCell {
-
+    
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var jobTitleLabel: UILabel!
+    @IBOutlet weak var jobCreationLabel: UILabel!
+    @IBOutlet weak var companyNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
