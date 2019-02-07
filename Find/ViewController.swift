@@ -23,5 +23,17 @@ class ViewController: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "searchPressed" {
+            let destincationVC = segue.destination as! JobResultsViewController
+            if let searchedJob = jobTitleText.text {
+                destincationVC.searchedJob = searchedJob
+            }
+            if let searchedLocation = locationText.text {
+                destincationVC.searchedLocation = searchedLocation
+            }
+        }
+    }
+    
 }
 

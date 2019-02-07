@@ -10,9 +10,13 @@ import UIKit
 
 class JobResultsViewController: UIViewController {
 
+    var searchedJob: String?
+    var searchedLocation: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("\(searchedJob) \(searchedLocation)")
         // Do any additional setup after loading the view.
     }
     
