@@ -35,7 +35,6 @@ class APIManager {
             for eachJob in dataArray {
                 let eachJobDict = eachJob as! [String: Any]
                 let job = JobData(eachJob: eachJobDict)
-                print(job.jobTitle)
                 jobs.append(job)
             }
             

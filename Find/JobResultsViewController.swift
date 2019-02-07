@@ -16,11 +16,27 @@ class JobResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("\(searchedJob) \(searchedLocation)")
-        // Do any additional setup after loading the view.
+        searchedJob = searchedJob?.replacingOccurrences(of: " ", with: "+")
+        searchedLocation = searchedLocation?.replacingOccurrences(of: " ", with: "+")
+        
+        getJobFResults()
+        
     }
     
 
+    func getJobFResults() {
+        
+        APIManager().getGithubJobs(with: searchedJob!, by: searchedLocation!) { (jobs, error) in
+            if error == nil {
+                for eachJob in jobs! {
+                    
+                }
+                
+            } else {
+                print("api error")
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

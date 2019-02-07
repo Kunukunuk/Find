@@ -71,7 +71,29 @@
                     <view key="view" contentMode="scaleToFill" id="F6R-bz-3Vw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fUx-DE-Sqa">
+                                <rect key="frame" x="5" y="69" width="365" height="593"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="UxU-J2-oWk">
+                                        <rect key="frame" x="0.0" y="28" width="365" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UxU-J2-oWk" id="1jU-Gb-TLB">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="110.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ufr-ZB-bTL" firstAttribute="bottom" secondItem="fUx-DE-Sqa" secondAttribute="bottom" constant="5" id="WYO-tn-aKu"/>
+                            <constraint firstItem="fUx-DE-Sqa" firstAttribute="top" secondItem="Ufr-ZB-bTL" secondAttribute="top" constant="5" id="g3A-A9-KmY"/>
+                            <constraint firstItem="fUx-DE-Sqa" firstAttribute="leading" secondItem="Ufr-ZB-bTL" secondAttribute="leading" constant="5" id="ueL-6A-Rkw"/>
+                            <constraint firstItem="Ufr-ZB-bTL" firstAttribute="trailing" secondItem="fUx-DE-Sqa" secondAttribute="trailing" constant="5" id="vh4-Md-HaZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ufr-ZB-bTL"/>
                     </view>
                 </viewController>
