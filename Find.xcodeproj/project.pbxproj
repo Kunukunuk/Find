@@ -62,18 +62,50 @@
 		0D12130622054314001993FB /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				0D12130722054314001993FB /* AppDelegate.swift */,
-				0DC0C6E2220BEF0B00F82DE3 /* JobCell.swift */,
-				0D12130922054314001993FB /* ViewController.swift */,
-				0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */,
-				0D07EBC4220A8CBA006D2FA9 /* APIManager.swift */,
-				0D07EBC6220A945F006D2FA9 /* JobData.swift */,
+				0D48198F220E6AEB00E767D8 /* Other */,
+				0D48198E220E6ADE00E767D8 /* View */,
+				0D48198D220E6ACC00E767D8 /* Model */,
+				0D48198C220E6AAF00E767D8 /* ViewController */,
 				0D12130B22054314001993FB /* Main.storyboard */,
 				0D12130E22054317001993FB /* Assets.xcassets */,
 				0D12131022054317001993FB /* LaunchScreen.storyboard */,
 				0D12131322054317001993FB /* Info.plist */,
 			);
 			path = Find;
+			sourceTree = "<group>";
+		};
+		0D48198C220E6AAF00E767D8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */,
+				0D12130922054314001993FB /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0D48198D220E6ACC00E767D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D07EBC6220A945F006D2FA9 /* JobData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D48198E220E6ADE00E767D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DC0C6E2220BEF0B00F82DE3 /* JobCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D48198F220E6AEB00E767D8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0D12130722054314001993FB /* AppDelegate.swift */,
+				0D07EBC4220A8CBA006D2FA9 /* APIManager.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
