@@ -20,7 +20,14 @@ class JobCell: UITableViewCell {
             if job?.companyLogo == "No Company Logo" {
                 logoImageView.image = UIImage(named: "NoLogo")
             } else {
-                print(job?.companyLogo)
+                do {
+                    let url = URL(string: (job?.companyLogo)!)
+                    let data = try Data(contentsOf: url!)
+                    self.logoImageView.image = UIImage(data: data)
+                }
+                catch {
+                    print(error)
+                }
             }
             jobTitleLabel.text = job?.jobTitle
             jobCreationLabel.text = job?.jobCreationDate

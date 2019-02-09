@@ -77,8 +77,8 @@
 		0D48198C220E6AAF00E767D8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */,
 				0D12130922054314001993FB /* ViewController.swift */,
+				0DC0C6E0220BDED500F82DE3 /* JobResultsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
