@@ -36,7 +36,6 @@
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchJobs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwe-YD-IeE"/>
-                                    <segue destination="b6p-xf-yqA" kind="show" identifier="searchPressed" id="ffO-EV-50d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,6 +57,7 @@
                     <connections>
                         <outlet property="jobTitleText" destination="Bkn-yR-ZIp" id="nmY-Pk-Cb2"/>
                         <outlet property="locationText" destination="qrD-3v-Tje" id="Upb-89-OJV"/>
+                        <segue destination="b6p-xf-yqA" kind="show" identifier="searchPressed" id="tXo-PH-U83"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

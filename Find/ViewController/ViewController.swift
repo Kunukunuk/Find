@@ -20,7 +20,13 @@ class ViewController: UIViewController {
     
     @IBAction func searchJobs(_ sender: UIButton) {
         
-
+        if jobTitleText.text == "" {
+            let alert = UIAlertController(title: "Invalid", message: "Did you forget what to search?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "searchPressed", sender: nil)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
