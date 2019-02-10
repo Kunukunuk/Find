@@ -130,6 +130,7 @@
                                             <outlet property="jobCreationLabel" destination="eg1-6M-QzU" id="q8B-ho-zxN"/>
                                             <outlet property="jobTitleLabel" destination="Fd7-Ie-EVw" id="s34-qQ-Hcb"/>
                                             <outlet property="logoImageView" destination="FR2-m9-UUA" id="KCj-Sc-Gfk"/>
+                                            <segue destination="UUX-VE-M9x" kind="show" id="gcL-LQ-pLW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -151,6 +152,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IqU-ap-K4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1964" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lft-U6-W0N">
+            <objects>
+                <viewController id="UUX-VE-M9x" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="az9-Ol-PdX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RGc-3a-GsG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4U-xw-zFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rH7-zq-O5d">
