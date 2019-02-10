@@ -56,14 +56,14 @@ class JobResultsViewController: UIViewController, UITableViewDelegate, UITableVi
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell) {
+            let job = jobs[indexPath.row]
+            let jobDetails = segue.destination as! DisplayJobViewController
+            jobDetails.jobDetail = job
+        }
     }
-    */
 
 }

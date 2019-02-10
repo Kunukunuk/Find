@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1964" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Job View Controller-->
         <scene sceneID="Lft-U6-W0N">
             <objects>
-                <viewController id="UUX-VE-M9x" sceneMemberID="viewController">
+                <viewController id="UUX-VE-M9x" customClass="DisplayJobViewController" customModule="Find" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="az9-Ol-PdX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
