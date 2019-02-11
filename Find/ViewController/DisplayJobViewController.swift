@@ -11,6 +11,11 @@ import UIKit
 class DisplayJobViewController: UIViewController {
 
     var jobDetail: JobData?
+    @IBOutlet weak var companyLogo: UIImageView!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var jobDescription: UILabel!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

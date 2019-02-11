@@ -218,6 +218,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RGc-3a-GsG"/>
                     </view>
+                    <connections>
+                        <outlet property="companyLogo" destination="3UG-U0-gVT" id="vcX-6j-kDl"/>
+                        <outlet property="companyName" destination="s25-OH-fdT" id="bnq-6O-cOK"/>
+                        <outlet property="jobDescription" destination="jgB-RD-ehM" id="pTp-PP-tId"/>
+                        <outlet property="scrollView" destination="YQK-GV-UYP" id="qmG-o0-fle"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4U-xw-zFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
