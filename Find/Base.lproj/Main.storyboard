@@ -166,7 +166,37 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-g2-MFL">
                                         <rect key="frame" x="8" y="8" width="375" height="603"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3UG-U0-gVT">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s25-OH-fdT">
+                                                <rect key="frame" x="8" y="159" width="359" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgB-RD-ehM">
+                                                <rect key="frame" x="8" y="191" width="359" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="s25-OH-fdT" secondAttribute="trailing" constant="8" id="7rZ-na-t8Y"/>
+                                            <constraint firstItem="3UG-U0-gVT" firstAttribute="height" secondItem="Fy8-g2-MFL" secondAttribute="height" multiplier="1:4" id="Njo-cd-I6n"/>
+                                            <constraint firstAttribute="trailing" secondItem="3UG-U0-gVT" secondAttribute="trailing" id="PTD-BX-NQH"/>
+                                            <constraint firstItem="3UG-U0-gVT" firstAttribute="width" secondItem="Fy8-g2-MFL" secondAttribute="width" id="TQo-eN-WJc"/>
+                                            <constraint firstItem="s25-OH-fdT" firstAttribute="top" secondItem="3UG-U0-gVT" secondAttribute="bottom" constant="8" id="lF2-0s-HM6"/>
+                                            <constraint firstItem="s25-OH-fdT" firstAttribute="leading" secondItem="Fy8-g2-MFL" secondAttribute="leading" constant="8" id="rTR-ej-ILJ"/>
+                                            <constraint firstItem="3UG-U0-gVT" firstAttribute="top" secondItem="Fy8-g2-MFL" secondAttribute="top" id="s8v-RK-72O"/>
+                                            <constraint firstItem="3UG-U0-gVT" firstAttribute="leading" secondItem="Fy8-g2-MFL" secondAttribute="leading" id="sPO-IW-MMT"/>
+                                            <constraint firstAttribute="trailing" secondItem="jgB-RD-ehM" secondAttribute="trailing" constant="8" id="slQ-VI-iAC"/>
+                                            <constraint firstItem="jgB-RD-ehM" firstAttribute="top" secondItem="s25-OH-fdT" secondAttribute="bottom" constant="8" id="vzg-dc-eUq"/>
+                                            <constraint firstItem="jgB-RD-ehM" firstAttribute="leading" secondItem="Fy8-g2-MFL" secondAttribute="leading" constant="8" id="w0e-yA-eIW"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
