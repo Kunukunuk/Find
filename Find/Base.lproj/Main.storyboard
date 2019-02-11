@@ -160,7 +160,32 @@
                     <view key="view" contentMode="scaleToFill" id="az9-Ol-PdX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQK-GV-UYP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-g2-MFL">
+                                        <rect key="frame" x="8" y="8" width="375" height="603"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fy8-g2-MFL" firstAttribute="leading" secondItem="YQK-GV-UYP" secondAttribute="leadingMargin" id="Cro-BN-Uiu"/>
+                                    <constraint firstItem="Fy8-g2-MFL" firstAttribute="top" secondItem="YQK-GV-UYP" secondAttribute="topMargin" id="D65-10-7WE"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Fy8-g2-MFL" secondAttribute="trailing" id="nzL-yY-3Wv"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Fy8-g2-MFL" secondAttribute="bottom" id="wIZ-uJ-jY1"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fy8-g2-MFL" firstAttribute="height" secondItem="RGc-3a-GsG" secondAttribute="height" id="C7H-kf-hqL"/>
+                            <constraint firstItem="Fy8-g2-MFL" firstAttribute="width" secondItem="RGc-3a-GsG" secondAttribute="width" id="KxL-55-OcU"/>
+                            <constraint firstItem="YQK-GV-UYP" firstAttribute="leading" secondItem="RGc-3a-GsG" secondAttribute="leading" id="MTC-w9-GC2"/>
+                            <constraint firstItem="RGc-3a-GsG" firstAttribute="trailing" secondItem="YQK-GV-UYP" secondAttribute="trailing" id="gOT-zo-XR4"/>
+                            <constraint firstItem="RGc-3a-GsG" firstAttribute="bottom" secondItem="YQK-GV-UYP" secondAttribute="bottom" id="m7f-Uy-lJN"/>
+                            <constraint firstItem="YQK-GV-UYP" firstAttribute="top" secondItem="RGc-3a-GsG" secondAttribute="top" id="sU5-88-VTD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RGc-3a-GsG"/>
                     </view>
                 </viewController>
