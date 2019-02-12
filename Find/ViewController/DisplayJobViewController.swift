@@ -20,7 +20,20 @@ class DisplayJobViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(jobDetail?.jobTitle)
+        if jobDetail?.companyLogo == "No Company Logo" {
+            companyLogo.image = UIImage(named: "NoLogo")
+        } else {
+            do {
+                let url = URL(string: (jobDetail?.companyLogo)!)
+                let data = try Data(contentsOf: url!)
+                self.companyLogo.image = UIImage(data: data)
+            }
+            catch {
+                print(error)
+            }
+        }
+        companyName.text = jobDetail?.companyName
+        jobDescription.text = jobDetail?.jobDescription
     }
     
 
