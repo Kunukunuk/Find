@@ -15,8 +15,6 @@ class DisplayJobViewController: UIViewController {
     @IBOutlet weak var companyName: UILabel!
     @IBOutlet weak var jobDescription: UILabel!
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
