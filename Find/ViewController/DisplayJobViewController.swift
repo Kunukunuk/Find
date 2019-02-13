@@ -14,6 +14,7 @@ class DisplayJobViewController: UIViewController {
     @IBOutlet weak var companyLogo: UIImageView!
     @IBOutlet weak var companyName: UILabel!
     @IBOutlet weak var jobDescription: UILabel!
+    @IBOutlet weak var howToApply: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class DisplayJobViewController: UIViewController {
         }
         companyName.text = jobDetail?.companyName
         jobDescription.text = jobDetail?.jobDescription
+        howToApply.text = jobDetail?.howToApply
     }
     
 

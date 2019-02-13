@@ -182,13 +182,22 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apply?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-yn-7Er">
+                                                <rect key="frame" x="8" y="217" width="359" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="Adh-yn-7Er" firstAttribute="top" secondItem="jgB-RD-ehM" secondAttribute="bottom" constant="8" id="4U6-fX-Pe8"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Adh-yn-7Er" secondAttribute="bottom" constant="5" id="7SL-3X-ZJm"/>
                                             <constraint firstAttribute="trailing" secondItem="s25-OH-fdT" secondAttribute="trailing" constant="8" id="7rZ-na-t8Y"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jgB-RD-ehM" secondAttribute="bottom" constant="5" id="C48-2t-fhR"/>
+                                            <constraint firstItem="Adh-yn-7Er" firstAttribute="leading" secondItem="Fy8-g2-MFL" secondAttribute="leading" constant="8" id="KZN-Vc-3Va"/>
                                             <constraint firstItem="3UG-U0-gVT" firstAttribute="height" secondItem="Fy8-g2-MFL" secondAttribute="height" multiplier="1:4" id="Njo-cd-I6n"/>
                                             <constraint firstAttribute="trailing" secondItem="3UG-U0-gVT" secondAttribute="trailing" id="PTD-BX-NQH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Adh-yn-7Er" secondAttribute="trailing" constant="8" id="SuB-AV-Hr6"/>
                                             <constraint firstItem="3UG-U0-gVT" firstAttribute="width" secondItem="Fy8-g2-MFL" secondAttribute="width" id="TQo-eN-WJc"/>
                                             <constraint firstItem="s25-OH-fdT" firstAttribute="top" secondItem="3UG-U0-gVT" secondAttribute="bottom" constant="8" id="lF2-0s-HM6"/>
                                             <constraint firstItem="s25-OH-fdT" firstAttribute="leading" secondItem="Fy8-g2-MFL" secondAttribute="leading" constant="8" id="rTR-ej-ILJ"/>
@@ -222,6 +231,7 @@
                     <connections>
                         <outlet property="companyLogo" destination="3UG-U0-gVT" id="vcX-6j-kDl"/>
                         <outlet property="companyName" destination="s25-OH-fdT" id="bnq-6O-cOK"/>
+                        <outlet property="howToApply" destination="Adh-yn-7Er" id="fUD-VH-Rf4"/>
                         <outlet property="jobDescription" destination="jgB-RD-ehM" id="pTp-PP-tId"/>
                     </connections>
                 </viewController>
