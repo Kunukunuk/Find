@@ -210,7 +210,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Fy8-g2-MFL" firstAttribute="height" secondItem="RGc-3a-GsG" secondAttribute="height" id="C7H-kf-hqL"/>
+                            <constraint firstItem="Fy8-g2-MFL" firstAttribute="height" secondItem="RGc-3a-GsG" secondAttribute="height" priority="250" id="C7H-kf-hqL"/>
                             <constraint firstItem="Fy8-g2-MFL" firstAttribute="width" secondItem="RGc-3a-GsG" secondAttribute="width" id="KxL-55-OcU"/>
                             <constraint firstItem="YQK-GV-UYP" firstAttribute="leading" secondItem="RGc-3a-GsG" secondAttribute="leading" id="MTC-w9-GC2"/>
                             <constraint firstItem="RGc-3a-GsG" firstAttribute="trailing" secondItem="YQK-GV-UYP" secondAttribute="trailing" id="gOT-zo-XR4"/>
